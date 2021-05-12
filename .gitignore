@@ -20,6 +20,8 @@
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+/public/user_images/*
+!/public/user_images/default_user.jpg
 
 /node_modules
 /yarn-error.log
