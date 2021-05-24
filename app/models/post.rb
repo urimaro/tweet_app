@@ -4,4 +4,8 @@ class Post < ApplicationRecord
     length: {maximum: 140}
   }
   validates :user_id, { presence: true }
+
+  def user
+    User.find_by(id: self.user_id)
+  end
 end
